@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is a buffer overflow?",
+      "answers": {
+        "a": "A type of memory corruption where data exceeds allocated space.",
+        "b": "A way to optimize memory usage.",
+        "c": "A method for debugging code.",
+        "d": "A technique for encrypting data."
+      },
+      "explanations": {
+        "a": "Buffer overflow occurs when data exceeds the allocated memory space, potentially leading to crashes or vulnerabilities.",
+        "b": "Incorrect: Buffer overflow is not about memory optimization.",
+        "c": "Incorrect: Buffer overflow is unrelated to debugging.",
+        "d": "Incorrect: Buffer overflow is not related to encryption."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following is a common consequence of a buffer overflow?",
+      "answers": {
+        "a": "Memory leakage",
+        "b": "Execution of arbitrary code",
+        "c": "Data compression",
+        "d": "Improved performance"
+      },
+      "explanations": {
+        "a": "Incorrect: Buffer overflow usually does not directly cause memory leakage.",
+        "b": "Buffer overflow can lead to the execution of arbitrary code, which can be exploited by attackers.",
+        "c": "Incorrect: Data compression is not a result of buffer overflow.",
+        "d": "Incorrect: Buffer overflow typically decreases performance or causes system crashes."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "How can a buffer overflow vulnerability be prevented?",
+      "answers": {
+        "a": "By using safe functions like strncpy() instead of strcpy()",
+        "b": "By increasing buffer sizes",
+        "c": "By using faster processors",
+        "d": "By disabling memory protection"
+      },
+      "explanations": {
+        "a": "Using safer functions like strncpy() helps prevent buffer overflow by limiting the number of characters copied.",
+        "b": "Incorrect: Simply increasing buffer sizes does not eliminate the risk of overflow.",
+        "c": "Incorrect: Processor speed does not affect buffer overflow vulnerabilities.",
+        "d": "Incorrect: Disabling memory protection would make the system more vulnerable to attacks."
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    }
+  ]
+}

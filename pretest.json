@@ -1,0 +1,56 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Which programming languages are most susceptible to buffer overflow attacks?",
+      "answers": {
+        "a": "Java and Python",
+        "b": "C and C++",
+        "c": "JavaScript and Ruby",
+        "d": "Swift and Kotlin"
+      },
+      "explanations": {
+        "a": "Incorrect: Java and Python manage memory automatically and are less prone to buffer overflow.",
+        "b": "C and C++ are most susceptible because they allow direct memory management.",
+        "c": "Incorrect: JavaScript and Ruby are not typically vulnerable to buffer overflow due to automatic memory management.",
+        "d": "Incorrect: Swift and Kotlin also manage memory automatically."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is a common technique used by attackers to exploit a buffer overflow?",
+      "answers": {
+        "a": "Code obfuscation",
+        "b": "Heap spraying",
+        "c": "Shellcode injection",
+        "d": "Packet sniffing"
+      },
+      "explanations": {
+        "a": "Incorrect: Code obfuscation is used to make code difficult to read, not exploit buffer overflows.",
+        "b": "Incorrect: Heap spraying is an attack technique but not specific to buffer overflows.",
+        "c": "Shellcode injection is a common technique where attackers insert malicious code into memory.",
+        "d": "Incorrect: Packet sniffing is a network monitoring technique, not related to buffer overflows."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following tools is commonly used to detect buffer overflow vulnerabilities?",
+      "answers": {
+        "a": "Wireshark",
+        "b": "Valgrind",
+        "c": "Nmap",
+        "d": "Burp Suite"
+      },
+      "explanations": {
+        "a": "Incorrect: Wireshark is used for network traffic analysis.",
+        "b": "Valgrind is a tool that helps in detecting memory-related errors, including buffer overflows.",
+        "c": "Incorrect: Nmap is a network scanning tool, not for detecting buffer overflows.",
+        "d": "Incorrect: Burp Suite is used for web vulnerability scanning."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}
