@@ -51,6 +51,57 @@
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which type of attack commonly exploits buffer overflow vulnerabilities?",
+      "answers": {
+        "a": "SQL Injection",
+        "b": "Cross-Site Scripting (XSS)",
+        "c": "Stack Smashing",
+        "d": "Man-in-the-Middle (MITM)"
+      },
+      "explanations": {
+        "a": "Incorrect: SQL Injection targets database queries, not memory buffers.",
+        "b": "Incorrect: XSS affects web browsers, not buffer overflows.",
+        "c": "Stack smashing is a technique where an attacker overflows a buffer to overwrite return addresses and take control of program execution.",
+        "d": "Incorrect: MITM attacks intercept network traffic, unrelated to buffer overflows."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is ASLR (Address Space Layout Randomization) used for?",
+      "answers": {
+        "a": "To optimize memory allocation",
+        "b": "To prevent buffer overflow attacks",
+        "c": "To speed up program execution",
+        "d": "To encrypt data at rest"
+      },
+      "explanations": {
+        "a": "Incorrect: ASLR is a security feature, not a memory optimization technique.",
+        "b": "ASLR helps prevent buffer overflow attacks by randomizing memory addresses, making it harder for attackers to predict locations.",
+        "c": "Incorrect: ASLR does not improve execution speed.",
+        "d": "Incorrect: ASLR is not related to encryption."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which programming language is most vulnerable to buffer overflow attacks?",
+      "answers": {
+        "a": "Python",
+        "b": "Java",
+        "c": "C",
+        "d": "Swift"
+      },
+      "explanations": {
+        "a": "Incorrect: Python has built-in memory management and is not prone to buffer overflows.",
+        "b": "Incorrect: Java uses automatic memory management, reducing buffer overflow risks.",
+        "c": "C is vulnerable to buffer overflow because it allows direct memory manipulation and lacks built-in bounds checking.",
+        "d": "Incorrect: Swift includes memory safety features to prevent buffer overflows."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     }
   ]
 }
