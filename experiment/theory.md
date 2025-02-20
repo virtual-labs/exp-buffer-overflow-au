@@ -4,7 +4,7 @@ Buffer overflow is a common security vulnerability that occurs when more data is
 ##### Key Concepts of Buffer Overflow:
 Memory Management: In programming languages like C and C++, memory management is handled manually. This means developers must allocate and deallocate memory as needed. If they allocate a buffer but don't ensure that the data written to it fits within its boundaries, a buffer overflow can occur.
 
-###### Types of Buffer Overflow:
+##### Types of Buffer Overflow:
 
 1. Stack-based Buffer Overflow: This type of overflow occurs in the call stack, which is used to store local variables and function calls. When a buffer on the stack is overflowed, it can overwrite critical data such as the return address of a function, potentially allowing an attacker to redirect the program's execution flow.
 Heap-based Buffer Overflow: This occurs in the heap, where dynamically allocated memory is managed. Overflowing a buffer on the heap can corrupt other data structures or function pointers, leading to exploitation.
