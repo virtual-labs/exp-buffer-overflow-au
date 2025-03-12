@@ -1,4 +1,4 @@
-### Thoery
+### Theory
 Buffer overflow is a common security vulnerability that occurs when more data is written to a buffer than it can hold. A buffer is a contiguous block of memory that is allocated to store data temporarily, such as a string of text or an array of integers. When a program writes data beyond the bounds of a buffer, it can overwrite adjacent memory locations, leading to unpredictable behavior. This vulnerability is particularly prevalent in languages like C and C++, where memory management is manual, and there are no built-in safeguards to prevent overwriting memory.
 
 ##### Key Concepts of Buffer Overflow
