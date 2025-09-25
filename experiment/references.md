@@ -1,4 +1,3 @@
-### References 
 
 1. [Buffer overflow  attacks and defenses for the vulnerability of the decade](https://ieeexplore.ieee.org/document/821514)
 
