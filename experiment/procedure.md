@@ -1,5 +1,3 @@
-### Procedure  
-
 1. **Read the instructions and prepare input**  
    - Enter your text into the input field.  
    - Fill the buffer with **16 bytes** and the **EBP with 4 bytes**.  
