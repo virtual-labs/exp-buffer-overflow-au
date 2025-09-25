@@ -2,38 +2,106 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which programming languages are most susceptible to buffer overflow attacks?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Java and Python",
+        "b": "C and C++",
+        "c": "JavaScript and Ruby",
+        "d": "Swift and Kotlin"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect: Java and Python manage memory automatically and are less prone to buffer overflow.",
+        "b": "C and C++ are most susceptible because they allow direct memory management.",
+        "c": "Incorrect: JavaScript and Ruby are not typically vulnerable to buffer overflow due to automatic memory management.",
+        "d": "Incorrect: Swift and Kotlin also manage memory automatically."
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is a common technique used by attackers to exploit a buffer overflow?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Code obfuscation",
+        "b": "Heap spraying",
+        "c": "Shellcode injection",
+        "d": "Packet sniffing"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Incorrect: Code obfuscation is used to make code difficult to read, not exploit buffer overflows.",
+        "b": "Incorrect: Heap spraying is an attack technique but not specific to buffer overflows.",
+        "c": "Shellcode injection is a common technique where attackers insert malicious code into memory.",
+        "d": "Incorrect: Packet sniffing is a network monitoring technique, not related to buffer overflows."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following tools is commonly used to detect buffer overflow vulnerabilities?",
+      "answers": {
+        "a": "Wireshark",
+        "b": "Valgrind",
+        "c": "Nmap",
+        "d": "Burp Suite"
+      },
+      "explanations": {
+        "a": "Incorrect: Wireshark is used for network traffic analysis.",
+        "b": "Valgrind is a tool that helps in detecting memory-related errors, including buffer overflows.",
+        "c": "Incorrect: Nmap is a network scanning tool, not for detecting buffer overflows.",
+        "d": "Incorrect: Burp Suite is used for web vulnerability scanning."
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following protections helps mitigate buffer overflow attacks?",
+      "answers": {
+        "a": "DEP (Data Execution Prevention)",
+        "b": "DNS Filtering",
+        "c": "SSL/TLS Encryption",
+        "d": "CDN (Content Delivery Network)"
+      },
+      "explanations": {
+        "a": "DEP prevents execution of code in non-executable memory regions, mitigating buffer overflow attacks.",
+        "b": "Incorrect: DNS filtering helps block malicious websites but does not prevent buffer overflows.",
+        "c": "Incorrect: SSL/TLS secures data in transit but does not protect against memory corruption.",
+        "d": "Incorrect: CDNs help with web performance and security but do not prevent buffer overflow attacks."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What happens when a buffer overflow corrupts the stack?",
+      "answers": {
+        "a": "The program simply ignores the extra data",
+        "b": "The excess data can overwrite return addresses, leading to arbitrary code execution",
+        "c": "The CPU automatically fixes the overflow",
+        "d": "The buffer expands to accommodate extra data"
+      },
+      "explanations": {
+        "a": "Incorrect: The program does not ignore overflowed data; it can cause corruption.",
+        "b": "Buffer overflows can overwrite return addresses, allowing attackers to execute arbitrary code.",
+        "c": "Incorrect: The CPU does not handle buffer overflows automatically.",
+        "d": "Incorrect: Buffers do not dynamically resize to prevent overflows."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following is an example of a buffer overflow attack?",
+      "answers": {
+        "a": "Heartbleed",
+        "b": "Phishing",
+        "c": "Denial of Service (DoS)",
+        "d": "SQL Injection"
+      },
+      "explanations": {
+        "a": "Heartbleed was an OpenSSL vulnerability caused by improper bounds checking, making it an example of a buffer overflow attack.",
+        "b": "Incorrect: Phishing is a social engineering attack, not memory-related.",
+        "c": "Incorrect: DoS attacks overwhelm systems with traffic but do not involve buffer overflows.",
+        "d": "Incorrect: SQL Injection exploits poorly sanitized database queries, not memory corruption."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
     }
   ]
 }
